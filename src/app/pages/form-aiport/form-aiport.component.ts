@@ -4,8 +4,13 @@ import {Observable} from "rxjs";
 import {Flight} from "../../flight.model";
 
 export class Airports {
-  states!: Flight[]
+  states!: Airport[]
 }
+
+export interface Airport {
+
+}
+
 @Component({
   selector: 'app-form-aiport',
   templateUrl: './form-aiport.component.html',
@@ -13,7 +18,7 @@ export class Airports {
 })
 export class FormAiportComponent implements OnInit {
 
-  airports!: Observable<Airports>
+  airports!: Observable<any>
 
   constructor(
     private airport: AirportService

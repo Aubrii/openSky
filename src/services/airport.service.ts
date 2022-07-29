@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Airports} from "../app/pages/form-aiport/form-aiport.component";
+import {filter, map, tap} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +14,11 @@ export class AirportService {
     private http: HttpClient
   ) { }
 
+
   getStateAll(){
-    return this.http.get<Airports>(`${this.baseURL}states/all`)
+    //TODO changer le lien vers le fichier JSON par baseURL avant production
+    return this.http.get<Airports>('../assets/flights.json').pipe(
+      map(airport => airport.states.filter((value, index)=> index < 50)),
+    )
   }
 }

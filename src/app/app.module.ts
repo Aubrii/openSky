@@ -11,6 +11,7 @@ import {ListComponent} from "./list/list.component";
 import {MatSelectModule} from "@angular/material/select";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {FormAiportComponent} from "./pages/form-aiport/form-aiport.component";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import {FormAiportComponent} from "./pages/form-aiport/form-aiport.component";
     BrowserAnimationsModule,
     MatToolbarModule,
     MatFormFieldModule,
-    MatSelectModule
+    MatSelectModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
