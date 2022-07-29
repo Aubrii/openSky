@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {AirportService} from "../../../services/airport.service";
 import {Observable} from "rxjs";
-import {Flight} from "../../flight.model";
+import {Flight} from "../../../models/flight.model";
 import {FormGroup} from "@angular/forms";
 
 export class Airports {

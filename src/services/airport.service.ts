@@ -22,6 +22,9 @@ export class AirportService {
     )
   }
 
+  /**
+   * Renvoie une liste d'aéroport
+   */
   getAirportsAll(){
     return this.http.get<Airports>('../assets/airports.json')
   }

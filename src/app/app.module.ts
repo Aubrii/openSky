@@ -5,9 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from "@angular/material/toolbar";
-import {PageInfoComponent} from "./page-info/page-info.component";
-import {RowComponent} from "./row/row.component";
-import {ListComponent} from "./list/list.component";
+import {InfoFlightComponent} from "./pages/info-flight/info-flight.component";
+import {RowComponent} from "./items/row/row.component";
+import {ListComponent} from "./items/list/list.component";
 import {MatSelectModule} from "@angular/material/select";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {FormAiportComponent} from "./pages/form-aiport/form-aiport.component";
@@ -17,7 +17,7 @@ import {ReactiveFormsModule} from "@angular/forms";
 @NgModule({
   declarations: [
     AppComponent,
-    PageInfoComponent,
+    InfoFlightComponent,
     RowComponent,
     ListComponent,
     FormAiportComponent
