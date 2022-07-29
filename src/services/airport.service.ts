@@ -21,4 +21,8 @@ export class AirportService {
       map(airport => airport.states.filter((value, index)=> index < 50)),
     )
   }
+
+  getAirportsAll(){
+    return
+  }
 }

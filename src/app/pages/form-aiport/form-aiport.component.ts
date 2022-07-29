@@ -29,6 +29,7 @@ export class FormAiportComponent implements OnInit {
   }
 
   getAirport(){
+    //TODO ajouter la fonction x
     return this.airport.getStateAll()
   }
 }
