@@ -4,15 +4,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatToolbarModule} from "@angular/material/toolbar";
 import {InfoFlightComponent} from "./pages/info-flight/info-flight.component";
 import {RowComponent} from "./items/row/row.component";
 import {ListComponent} from "./items/list/list.component";
-import {MatSelectModule} from "@angular/material/select";
-import {MatFormFieldModule} from "@angular/material/form-field";
 import {FormAiportComponent} from "./pages/form-aiport/form-aiport.component";
 import {HttpClientModule} from "@angular/common/http";
 import {ReactiveFormsModule} from "@angular/forms";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatSelectModule} from "@angular/material/select";
+import {MatButtonModule} from "@angular/material/button";
+import {MatToolbarModule} from "@angular/material/toolbar";
+import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 
 @NgModule({
   declarations: [
@@ -26,11 +28,13 @@ import {ReactiveFormsModule} from "@angular/forms";
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
+    HttpClientModule,
+    ReactiveFormsModule,
     MatFormFieldModule,
     MatSelectModule,
-    HttpClientModule,
-    ReactiveFormsModule
+    MatButtonModule,
+    MatToolbarModule,
+    MatSlideToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

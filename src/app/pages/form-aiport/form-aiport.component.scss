@@ -1,0 +1,31 @@
+h2{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #3f51b5;
+}
+.mat-form-field{
+  display: block;
+  margin-top: 4rem;
+}
+.button{
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.mat-flat-button{
+  padding: 1rem 4rem;
+  font-size: 2rem;
+}
+
+.toggle_section{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  > span{
+    color: #3f51b5;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+}
