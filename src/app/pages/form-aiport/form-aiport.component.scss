@@ -22,10 +22,16 @@ h2{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin: 4rem 0;
   > span{
     color: #3f51b5;
     font-size: 1rem;
     font-weight: bold;
     letter-spacing: 1px;
   }
+}
+
+.date{
+  display: flex;
+  justify-content: space-around;
 }

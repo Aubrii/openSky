@@ -1,4 +1,4 @@
-export class AirportModel {
+export class Airport {
   carriers!: string
   city!: string
   code!: string
