@@ -1,8 +1,10 @@
-<mat-form-field appearance="fill">
-  <mat-label>Favorite food</mat-label>
-  <mat-select>
-    <mat-option *ngFor="let airport of airports | async" [value]="airport">
-      {{airport[2]}}
-    </mat-option>
-  </mat-select>
-</mat-form-field>
+<div [formGroup]="formAirport" (ngSubmit)="onSubmit()">
+  <mat-form-field appearance="fill">
+    <mat-label>Select your airport</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let airport of airports | async" [value]="airport.icao">
+        {{airport.name + " " + airport.icao}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>

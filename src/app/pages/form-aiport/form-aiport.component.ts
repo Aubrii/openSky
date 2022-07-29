@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {AirportService} from "../../../services/airport.service";
 import {Observable} from "rxjs";
 import {Flight} from "../../flight.model";
+import {FormGroup} from "@angular/forms";
 
 export class Airports {
   states!: Airport[]
@@ -17,7 +18,7 @@ export interface Airport {
   styleUrls: ['./form-aiport.component.scss']
 })
 export class FormAiportComponent implements OnInit {
-
+  formAirport!: FormGroup
   airports!: Observable<any>
 
   constructor(
@@ -30,6 +31,14 @@ export class FormAiportComponent implements OnInit {
 
   getAirport(){
     //TODO ajouter la fonction x
-    return this.airport.getStateAll()
+    //return this.airport.getStateAll()
+    return this.airport.getAirportsAll()
+  }
+  initForm(){
+    //TODO Builder le formulaire
+  }
+
+  onSubmit() {
+    console.log(this.formAirport)
   }
 }

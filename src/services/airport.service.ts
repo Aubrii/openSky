@@ -23,6 +23,6 @@ export class AirportService {
   }
 
   getAirportsAll(){
-    return
+    return this.http.get<Airports>('../assets/airports.json')
   }
 }
